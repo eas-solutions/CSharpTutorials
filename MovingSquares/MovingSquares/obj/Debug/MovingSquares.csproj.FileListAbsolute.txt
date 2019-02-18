@@ -1,0 +1,10 @@
+C:\Users\Andre Beging\source\repos\MovingSquares\MovingSquares\bin\Debug\MovingSquares.exe.config
+C:\Users\Andre Beging\source\repos\MovingSquares\MovingSquares\bin\Debug\MovingSquares.exe
+C:\Users\Andre Beging\source\repos\MovingSquares\MovingSquares\bin\Debug\MovingSquares.pdb
+C:\Users\Andre Beging\source\repos\MovingSquares\MovingSquares\obj\Debug\MovingSquares.csprojAssemblyReference.cache
+C:\Users\Andre Beging\source\repos\MovingSquares\MovingSquares\obj\Debug\MovingSquares.Form1.resources
+C:\Users\Andre Beging\source\repos\MovingSquares\MovingSquares\obj\Debug\MovingSquares.Properties.Resources.resources
+C:\Users\Andre Beging\source\repos\MovingSquares\MovingSquares\obj\Debug\MovingSquares.csproj.GenerateResource.cache
+C:\Users\Andre Beging\source\repos\MovingSquares\MovingSquares\obj\Debug\MovingSquares.csproj.CoreCompileInputs.cache
+C:\Users\Andre Beging\source\repos\MovingSquares\MovingSquares\obj\Debug\MovingSquares.exe
+C:\Users\Andre Beging\source\repos\MovingSquares\MovingSquares\obj\Debug\MovingSquares.pdb
