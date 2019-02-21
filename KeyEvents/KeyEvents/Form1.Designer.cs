@@ -28,10 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.SpaceShipPanel = new System.Windows.Forms.Panel();
             this.ControlInfoLabel = new System.Windows.Forms.Label();
-            this.SpaceShipTimer = new System.Windows.Forms.Timer(this.components);
             this.PositionLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -50,14 +48,9 @@
             this.ControlInfoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ControlInfoLabel.Location = new System.Drawing.Point(12, 9);
             this.ControlInfoLabel.Name = "ControlInfoLabel";
-            this.ControlInfoLabel.Size = new System.Drawing.Size(122, 13);
+            this.ControlInfoLabel.Size = new System.Drawing.Size(173, 13);
             this.ControlInfoLabel.TabIndex = 1;
-            this.ControlInfoLabel.Text = "Use your arrow keys";
-            // 
-            // SpaceShipTimer
-            // 
-            this.SpaceShipTimer.Interval = 10;
-            this.SpaceShipTimer.Tick += new System.EventHandler(this.SpaceShipTimer_Tick);
+            this.ControlInfoLabel.Text = "Use W, A, S and D to control";
             // 
             // PositionLabel
             // 
@@ -79,8 +72,7 @@
             this.Controls.Add(this.SpaceShipPanel);
             this.Name = "Form1";
             this.Text = "KeyEvents";
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
-            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -90,7 +82,6 @@
 
         private System.Windows.Forms.Panel SpaceShipPanel;
         private System.Windows.Forms.Label ControlInfoLabel;
-        private System.Windows.Forms.Timer SpaceShipTimer;
         private System.Windows.Forms.Label PositionLabel;
     }
 }
