@@ -1,5 +1,4 @@
-﻿using System.Drawing;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace KeyEvents
 {
@@ -35,28 +34,29 @@ namespace KeyEvents
             // Das SpaceShipPanel soll sich nach oben bewegen (Y-Koordinate um 10 reduzieren)
             if (e.KeyChar == (char) 119)
             {
-                SpaceShipPanel.Location = new Point(SpaceShipPanel.Location.X, SpaceShipPanel.Location.Y - 20);
+                // Implementiere mich
+                // Die Position (new Point()) des Panels abhängig der aktuellen Position setzen
             }
 
             // Der gedrückte Key ist A (KeyCode = 97)
             // Das SpaceShipPanel soll sich nach links bewegen (X-Koordinate um 10 reduzieren)
             if (e.KeyChar == (char)97)
             {
-                SpaceShipPanel.Location = new Point(SpaceShipPanel.Location.X - 20, SpaceShipPanel.Location.Y);
+                // Implementiere mich
             }
 
             // Der gedrückte Key ist S (KeyCode = 115)
             // Das SpaceShipPanel soll sich nach unten bewegen (Y-Koordinate um 10 erhöhen)
             if (e.KeyChar == (char)115)
             {
-                SpaceShipPanel.Location = new Point(SpaceShipPanel.Location.X, SpaceShipPanel.Location.Y + 20);
+                // Implementiere mich
             }
 
             // Der gedrückte Key ist D (KeyCode = 100)
             // Das SpaceShipPanel soll sich nach unten bewegen (Y-Koordinate um 10 erhöhen)
             if (e.KeyChar == (char)100)
             {
-                SpaceShipPanel.Location = new Point(SpaceShipPanel.Location.X + 20, SpaceShipPanel.Location.Y);
+                // Implementiere mich
             }
 
 
@@ -64,7 +64,7 @@ namespace KeyEvents
             //// AUFGABE 2 ////
             ///////////////////
             // PositionLabel soll die aktuelle Position (X und Y) des SpaceShipPanel anzeigen
-            PositionLabel.Text = "Position: X=" + SpaceShipPanel.Location.X + ", Y=" + SpaceShipPanel.Location.Y;
+            PositionLabel.Text = "...";
 
             ///////////////////////
             //// ZUSATZAUFGABE ////
@@ -73,7 +73,7 @@ namespace KeyEvents
             // Gleiche if-Abfrage wie oben. Der KeyCode der Leertaste ist 32
             if (e.KeyChar == (char)32)
             {
-                SpaceShipPanel.Location = new Point(10, 30);
+                // Implementiere mich
             }
         }
     }
