@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Drawing;
 using System.Windows.Forms;
 
 namespace MovingSquares
@@ -13,19 +12,33 @@ namespace MovingSquares
         private ArrowDirection _greenPanelDirection = ArrowDirection.Up;
 
         // Variablen zum Abstecken des "Bereichs"
-        private int _topBorder = 10;
-        private int _rightBorder = 300;
-        private int _bottomBorder = 300;
-        private int _leftBorder = 10;
+        private int _topBorder = 10; // Oberen Grenze bei Position Y=10
+        private int _rightBorder = 300; // Rechte Grenze bei Position X=300
+        private int _bottomBorder = 300; // Untere Grenze bei Position Y=300
+        private int _leftBorder = 10; // Untere Grenze bei Position X=10
 
-        // Einstiegsmethode in das Form
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Einstiegsmethode in das Form. </summary>
+        ///
+        /// <remarks>   A Beging, 08.12.2020. </remarks>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
         public Form1()
         {
             InitializeComponent();
             IntervalLabel.Text = RotationTimer.Interval.ToString();
         }
 
-        // Tick-Event des Timers. Wird alle x Millisekunden ausgeführt (x = Intervall)
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>
+        /// Tick-Event des Timers. Wird alle x Millisekunden ausgeführt (x = Intervall)
+        /// </summary>
+        ///
+        /// <remarks>   A Beging, 08.12.2020. </remarks>
+        ///
+        /// <param name="sender">   Das Steuerelement, welches das Event ausgelöst hat, hier nicht
+        ///                         verwendet. </param>
+        /// <param name="e">        Event information. </param>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
         private void RotationTimer_Tick(object sender, EventArgs e)
         {
             // Rotes Panel
@@ -45,13 +58,20 @@ namespace MovingSquares
             CheckDirectionChange(GreenPanel, ref _greenPanelDirection);
         }
 
-        // Bewegt ein Panel entsprechend der angegebenen Richtung
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Bewegt ein Panel entsprechend der angegebenen Richtung. </summary>
+        ///
+        /// <remarks>   A Beging, 08.12.2020. </remarks>
+        ///
+        /// <param name="panel">        Das Panel, welches bewegt werden soll. </param>
+        /// <param name="direction">    The direction. </param>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
         private void MovePanel(Panel panel, ArrowDirection direction)
         {
             switch (direction)
             {
                 case ArrowDirection.Right:
-                    MoveRight(panel, 5);
+                    MoveRight(panel, 5); // Das Panel um 5 Pixel nach rechts bewegen
                     break;
                 case ArrowDirection.Down:
                     MoveDown(panel, 5);
@@ -65,7 +85,16 @@ namespace MovingSquares
             }
         }
 
-        // Prüft, ob ein Panel den Rand des Bereichs erreicht hat und ändert ggf die Richtung
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>
+        /// Prüft, ob ein Panel den Rand des Bereichs erreicht hat und ändert ggf die Richtung.
+        /// </summary>
+        ///
+        /// <remarks>   A Beging, 08.12.2020. </remarks>
+        ///
+        /// <param name="panel">            Das Panel, welches bewegt werden soll. </param>
+        /// <param name="panelDirection">   Die neue Richtung des Panels </param>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
         private void CheckDirectionChange(Panel panel, ref ArrowDirection panelDirection)
         {
             if (panelDirection == ArrowDirection.Right && panel.Location.X == _rightBorder)
@@ -86,62 +115,122 @@ namespace MovingSquares
             }
         }
 
-        // Bewegt ein Panel um die angegebenen Pixel nach oben auf der Y-Achse
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Bewegt ein Panel um die angegebenen Pixel nach oben auf der Y-Achse. </summary>
+        ///
+        /// <remarks>   A Beging, 08.12.2020. </remarks>
+        ///
+        /// <param name="panel">    Das panel, welches bewegt werden soll </param>
+        /// <param name="pixel">    Die Anzahl an pixeln, um die das Panel nach oben bewegt werden soll </param>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
         private void MoveUp(Panel panel, int pixel)
         {
-            panel.Location = new Point(panel.Location.X, panel.Location.Y - pixel);
+            // Implementiere mich
+            // (Die Location des Panels basierend auf der aktuellen Location setzen)
         }
 
-        // Bewegt ein Panel um die angegebenen Pixel nach unten auf der Y-Achse
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Bewegt ein Panel um die angegebenen Pixel nach unten auf der Y-Achse. </summary>
+        ///
+        /// <remarks>   A Beging, 08.12.2020. </remarks>
+        ///
+        /// <param name="panel">    Das panel, welches bewegt werden soll. </param>
+        /// <param name="pixel">    Die Anzahl an pixeln, um die das Panel nach unten bewegt werden soll. </param>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
         private void MoveDown(Panel panel, int pixel)
         {
-            panel.Location = new Point(panel.Location.X, panel.Location.Y + pixel);
+            // Implementiere mich
         }
 
-        // Bewegt ein Panel um die angegebenen Pixel nach rechts auf der X-Achse
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Bewegt ein Panel um die angegebenen Pixel nach rechts auf der X-Achse. </summary>
+        ///
+        /// <remarks>   A Beging, 08.12.2020. </remarks>
+        ///
+        /// <param name="panel">    Das panel, welches bewegt werden soll. </param>
+        /// <param name="pixel">    Die Anzahl an pixeln, um die das Panel nach rechts bewegt werden soll. </param>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
         private void MoveRight(Panel panel, int pixel)
         {
-            panel.Location = new Point(panel.Location.X + pixel, panel.Location.Y);
+            // Implementiere mich
         }
 
-        // Bewegt ein Panel um die angegebenen Pixel nach links auf der X-Achse
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Bewegt ein Panel um die angegebenen Pixel nach links auf der X-Achse. </summary>
+        ///
+        /// <remarks>   A Beging, 08.12.2020. </remarks>
+        ///
+        /// <param name="panel">    Das panel, welches bewegt werden soll. </param>
+        /// <param name="pixel">    Die Anzahl an pixeln, um die das Panel nach links bewegt werden soll. </param>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
         private void MoveLeft(Panel panel, int pixel)
         {
-            panel.Location = new Point(panel.Location.X - pixel, panel.Location.Y);
+            // Implementiere mich
         }
 
-        // Behandelt das Klick Event des StartButton
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Behandelt das Klick Event des StartButton. </summary>
+        ///
+        /// <remarks>   A Beging, 08.12.2020. </remarks>
+        ///
+        /// <param name="sender">   Das Steuerelement, welches das Event ausgelöst hat, hier nicht
+        ///                         verwendet. </param>
+        /// <param name="e">        Eventinformationen, hier nicht verwendet. </param>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
         private void StartButton_Click(object sender, EventArgs e)
         {
-            // Timer starten
-            RotationTimer.Enabled = true;
+            // Implementiere mich
+            // Timer starten (aktivieren)
         }
 
-        // Behandelt das Klick Event des StopButton
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Behandelt das Klick Event des StopButton. </summary>
+        ///
+        /// <remarks>   A Beging, 08.12.2020. </remarks>
+        ///
+        /// <param name="sender">   Das Steuerelement, welches das Event ausgelöst hat, hier nicht
+        ///                         verwendet. </param>
+        /// <param name="e">        Eventinformationen, hier nicht verwendet </param>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
         private void StopButton_Click(object sender, EventArgs e)
         {
-            // Timer stoppen
-            RotationTimer.Enabled = false;
+            // Implementiere mich
+            // Timer stoppen (deaktivieren)
         }
 
-        // Behandelt das Klick Event des FasterButton
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Behandelt das Klick Event des FasterButton. </summary>
+        ///
+        /// <remarks>   A Beging, 08.12.2020. </remarks>
+        ///
+        /// <param name="sender">   Das Steuerelement, welches das Event ausgelöst hat, hier nicht
+        ///                         verwendet. </param>
+        /// <param name="e">        Eventinformationen, hier nicht verwendet </param>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
         private void FasterButton_Click(object sender, EventArgs e)
         {
-            // Intervall des Timers verringern (wird häufiger ausgeführt)
-            // Der Intervall darf nicht 0 oder kleiner sein -> prüfen
-            if (RotationTimer.Interval > 5)
-                RotationTimer.Interval -= 5;
+            // Implementiere mich
+            // Intervall des Timers um 5 verringern (wird häufiger ausgeführt)
+            // Der Intervall darf nicht 0 oder kleiner sein -> prüfen!
 
-            IntervalLabel.Text = RotationTimer.Interval.ToString();
+            // Den aktuellen Intervall in das IntervalLabel schreiben
         }
 
-        // Behandelt das Klick Event des SlowerButton
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Behandelt das Klick Event des SlowerButton. </summary>
+        ///
+        /// <remarks>   A Beging, 08.12.2020. </remarks>
+        ///
+        /// <param name="sender">   Das Steuerelement, welches das Event ausgelöst hat, hier nicht
+        ///                         verwendet. </param>
+        /// <param name="e">        Eventinformationen, hier nicht verwendet </param>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
         private void SlowerButton_Click(object sender, EventArgs e)
         {
-            // Intervall des Timers erhöhen (wird seltener ausgeführt)
-            RotationTimer.Interval += 5;
+            // Implementiere mich
+            // Intervall des Timers um 5 erhöhen (wird seltener ausgeführt)
 
-            IntervalLabel.Text = RotationTimer.Interval.ToString();
+            // Den aktuellen Intervall in das IntervalLabel schreiben
         }
     }
 }
