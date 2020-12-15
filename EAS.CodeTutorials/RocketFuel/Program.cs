@@ -5,8 +5,8 @@ using System.Linq;
  * Sehr geehrter Herr Raketenwissenschaftler,
  *
  * um nicht unnötig viel Treibstoff zu verbrauchen und die somit die Kosten für den
- * Steuerzahler möglichst gering zu halten, benötigen wir noch die für den nächsten
- * Raketenstart exakt benötigte Menge an Treibstoff.
+ * Steuerzahler möglichst gering zu halten, ist die für den nächsten Raketenstart
+ * exakt benötigte Menge an Treibstoff erforderlich.
  *
  * Im Anhang an diese Nachricht finden Sie die einzelnen Gewichte aller unserer Raketenmodule.
  * Die benötigte Menge Treibstoff pro Modul ergibt sich, indem Sie das Gewicht durch drei
@@ -20,7 +20,7 @@ using System.Linq;
  *
  */
 
-// Alle Zeilen von input.txt ins ein string-array lesen
+// Alle Zeilen von input.txt in ein string-array lesen
 var massesArrayString = EAS.CodeTutorials.RocketFuel.Input.Data;
 
 // String-array in int-array konvertieren

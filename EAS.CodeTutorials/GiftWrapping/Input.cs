@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace EAS.CodeTutorials.Frequency
+namespace EAS.CodeTutorials.GiftWrapping
 {
     ////////////////////////////////////////////////////////////////////////////////////////////////////
     /// <summary>   An input. </summary>

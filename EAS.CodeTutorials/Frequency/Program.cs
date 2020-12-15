@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 /*
@@ -21,7 +22,7 @@ using System.Linq;
  * Die Startfrequenz würde in diesem Beispiel 3 sein.
  */
 
-// Alle Zeilen von input.txt ins ein string-array lesen
+// Alle Zeilen von input.txt in ein string-array lesen
 var frequenceArrayString = EAS.CodeTutorials.Frequency.Input.Data;
 
 // String-array in int-array konvertieren
@@ -56,7 +57,28 @@ Console.WriteLine("Startfrequenz: " + launchFrequency);
 // 
 // Beispiel: 
 // ***********
+
 var controlFrequency = 0;
+
+var merkListe = new List<int>();
+var kontrollFrequenzGefunden = false;
+
+while(kontrollFrequenzGefunden == false)
+{
+    foreach (var frequenz in frequenceArray)
+    {
+        launchFrequency += frequenz;
+
+        if (merkListe.Contains(launchFrequency))
+        {
+            kontrollFrequenzGefunden = true;
+            controlFrequency = launchFrequency;
+            break;
+        }
+
+        merkListe.Add(launchFrequency);
+    }
+}
 
 Console.WriteLine("Kontrollfrequenz: " + controlFrequency);
 // launchFrequency sollte 367 ergeben
