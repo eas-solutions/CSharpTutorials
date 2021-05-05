@@ -1,4 +1,4 @@
-# CSharpTutorials
+# Lernprojekte
 
 ## 1. Projekt "KeyEvents"
 (WinForms-Steuerelemente, KeyEvents)
@@ -36,3 +36,10 @@ Die Datei **Program.cs** enthält die Aufgabenbeschreibung
 
 Die Datei **Program.cs** enthält die Aufgabenbeschreibung
 
+# Externe Tutorials
+
+**Erfahrungslevel: Keine Ahnung**
+https://studio.code.org/s/course1/lessons/7/levels/1
+
+**Erfahrungslevel: Für Wechsler, Erfahrung in anderer Sprache vorhanden**
+https://studio.code.org/s/course1/lessons/7/levels/1
