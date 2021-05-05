@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 /*
  * Wir schreiben das Jahr 2027. Wie einst auch Al Capone konnte mittlerweile auch Jeff Bezoz ganz
@@ -16,9 +18,9 @@
  * Gesamt benötigtes Geschenkpapier = 52 + 6 = 58
  */
 
-var boxData = EAS.CodeTutorials.GiftWrapping.Input.Data;
-var wrappingPaper = 0;
-var giftBand = 0;
+string[] boxData = EAS.CodeTutorials.GiftWrapping.Input.Data;
+int wrappingPaper = 0;
+int giftBand = 0;
 
 
 // ***********
@@ -30,10 +32,11 @@ var giftBand = 0;
 
 
 
+
 // ***********
 // AUFGABE 2
 // Nachdem Jeff diese Aufgabe erfolgreich meistern konnte, hat der Gefängniswärter Steve (ist
-// eigentlich nur Betriebsleiter) eine weiter Aufgabe für ihn. Die 1000 Pakete sollen zusätzlich
+// eigentlich nur Betriebsleiter) eine weitere Aufgabe für ihn. Die 1000 Pakete sollen zusätzlich
 // mit Geschenkband verschönert werden. Das benötigte Geschenkband ist die kürzeste Strecke um das
 // Paket herum. Zusätzlich wird für eine schöne Schleife noch mehr gebraucht. Die Länge hierfür
 // ergibt sich aus dem Produkt aller drei Seiten.

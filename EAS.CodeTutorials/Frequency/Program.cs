@@ -32,7 +32,7 @@ var frequenceArray = frequenceArrayString.Select(int.Parse).ToList();
 // AUFGABE 1
 // Berechne die Startfrequenz anhand der angegebenen Regeln
 // ***********
-var launchFrequency = 0;
+int launchFrequency = 0;
 
 Console.WriteLine("Startfrequenz: " + launchFrequency);
 // launchFrequency sollte 484 ergeben
@@ -58,27 +58,7 @@ Console.WriteLine("Startfrequenz: " + launchFrequency);
 // Beispiel: 
 // ***********
 
-var controlFrequency = 0;
-
-var merkListe = new List<int>();
-var kontrollFrequenzGefunden = false;
-
-while(kontrollFrequenzGefunden == false)
-{
-    foreach (var frequenz in frequenceArray)
-    {
-        launchFrequency += frequenz;
-
-        if (merkListe.Contains(launchFrequency))
-        {
-            kontrollFrequenzGefunden = true;
-            controlFrequency = launchFrequency;
-            break;
-        }
-
-        merkListe.Add(launchFrequency);
-    }
-}
+int controlFrequency = 0;
 
 Console.WriteLine("Kontrollfrequenz: " + controlFrequency);
 // launchFrequency sollte 367 ergeben

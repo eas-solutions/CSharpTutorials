@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 /*
@@ -21,10 +22,10 @@ using System.Linq;
  */
 
 // Alle Zeilen von input.txt in ein string-array lesen
-var massesArrayString = EAS.CodeTutorials.RocketFuel.Input.Data;
+string[] massesArrayString = EAS.CodeTutorials.RocketFuel.Input.Data;
 
 // String-array in int-array konvertieren
-var massesArray = massesArrayString.Select(int.Parse).ToList();
+List<int> massesArray = massesArrayString.Select(int.Parse).ToList();
 
 // ***********
 // AUFGABE 1
@@ -32,7 +33,7 @@ var massesArray = massesArrayString.Select(int.Parse).ToList();
 // insgesamt benötigt wird.
 // ***********
 // 
-var totalFuel = 0;
+int totalFuel = 0;
 
 Console.WriteLine("Gesamt benötigter Treibstoff: " + totalFuel);
 // totalFuel sollte 3178783 ergeben
@@ -53,7 +54,7 @@ Console.WriteLine("Gesamt benötigter Treibstoff: " + totalFuel);
 // Berechne nach den oben angegebenen Regeln den Treibstoff für den Treibstoff.
 // ***********
 
-var totalFuel2 = 0;
+int totalFuel2 = 0;
 // totalFuel2 sollte 4765294 ergeben
 
 Console.WriteLine("Gesamt benötigter Treibstoff (Korrektur): " + totalFuel2);

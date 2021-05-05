@@ -13,8 +13,8 @@ namespace EAS.CodeTutorials.Frequency
         {
             get
             {
-                var executingDirectory = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
-                var inputPath = Path.Combine(executingDirectory ?? string.Empty, "input.txt");
+                string executingDirectory = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+                string inputPath = Path.Combine(executingDirectory ?? string.Empty, "input.txt");
                 return File.ReadAllLines(inputPath);
             }
         }
