@@ -43,3 +43,6 @@ https://studio.code.org/s/course1/lessons/7/levels/1
 
 **Erfahrungslevel: Für Wechsler, Erfahrung in anderer Sprache vorhanden**
 https://studio.code.org/s/course1/lessons/7/levels/1
+
+**MVVM Light in WPF**
+https://codingfreaks.de/wpf-mvvm-01/
