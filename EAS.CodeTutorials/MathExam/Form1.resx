@@ -58,7 +58,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="richTextBox1.Text" xml:space="preserve">
-    <value>Erstelle ein Programm für eine Matheprüfung.
+    <value>Erstell ein Programm für eine Matheprüfung.
 
 Das Programm soll folgende Anforderungen erfüllen:
 - Das Programm zeigt am Anfang nur den Button "Test starten!"
