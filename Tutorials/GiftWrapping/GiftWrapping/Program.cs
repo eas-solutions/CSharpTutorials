@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 
 /*
- * Wir schreiben das Jahr 2027. Wie einst auch Al Capone konnte mittlerweile auch Jeff Bezoz ganz
+ * Wir schreiben das Jahr 2034. Wie einst auch Al Capone konnte mittlerweile auch Jeff Bezoz ganz
  * klar der größte Fall von Steuerhinterziehung in der Menschheitsgeschichte nachgewiesen werden.
  * Sein Versandhandel wurde verstaatlicht und die verhängte Strafe lautet wie folgt:
  * Der Verurteilte muss nicht ins Gefängnis, ist dafür fortan für die Optimierung der
  * Geschenkverpackung aller versendeten Pakete zuständig. Für seine erste Aufgabe bekommt Jeff die
  * Maße von 1000 exakt rechtwinkligen Paketen mitgeteilt. Die benötigte Menge an Geschenkpapier pro
- * Paket ergibt sich aus der Oberfläche. Sicherheitshalber wird pro Paket noch Fläche der
+ * Paket ergibt sich aus der Oberfläche. Sicherheitshalber wird pro Paket noch die Fläche der
  * kleinsten Seite zusätzlich benötigt.
  * 
  * Beispielpaket 2x3x4

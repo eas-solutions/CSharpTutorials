@@ -1,40 +1,16 @@
-# Lernprojekte
+# Konsolenprojekte
 
-## 1. Projekt "KeyEvents"
-(WinForms-Steuerelemente, KeyEvents)
+- [Frequency](Tutorials\Frequency\README.md) (Tutorials\Frequency\Frequency.sln)
+- [RocketFuel](Tutorials\RocketFuel\README.md) (Tutorials\RocketFuel\RocketFuel.sln)
+- [GiftWrapping](Tutorials\GiftWrapping\README.md) (Tutorials\GiftWrapping\GiftWrapping.sln)
 
-Die Datei **Form1.cs** enthält die Aufgabenbeschreibung
+# WinForms-Projekte
 
+- [KeyEvents](Tutorials\KeyEvents\README.md) (Tutorials\KeyEvents\KeyEvents.sln)
+- [MovingSquares](Tutorials\MovingSquares\README.md) (Tutorials\MovingSquares\MovingSquares.sln)
+- [MathExam](Tutorials\MathExam\README.md) (Tutorials\MathExam\MathExam.sln)
 
-
-## 2. Projekt "MovingSquares"
-(WinForms-Steuerelemente)
-
-Die Datei **Form1.cs** enthält die Aufgabenbeschreibung
-
-
-## 3. Projekt "Frequency"
-(Logik, Einfach)
-
-Die Datei **Program.cs** enthält die Aufgabenbeschreibung
-
-
-## 4. Projekt "MathExam"
-(WinForms-Steuerelemente, Interaktion)
-
-Die Datei **Form1.cs (Grafisch)** enthält die Aufgabenbeschreibung
-
-
-## 5. Projekt "RocketFuel"
-(Logik, Mittel)
-
-Die Datei **Program.cs** enthält die Aufgabenbeschreibung
-
-
-## 6. Projekt "GiftWrapping"
-(Logik, Mittel)
-
-Die Datei **Program.cs** enthält die Aufgabenbeschreibung
+---
 
 # Externe Tutorials
 
